@@ -3,202 +3,262 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Villkor | Visuell takdokumentation</title>
-    <meta name="description" content="Villkor för visuell takdokumentation med drönare.">
+    <title>Villkor och integritetspolicy | Karlik Solutions</title>
+    <meta name="description" content="Allmänna villkor, villkor för drönartjänster och digitala lösningar samt integritetspolicy för Karlik Solutions i Jönköping.">
     <link rel="canonical" href="https://karliksolutions.se/villkor.html">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <style>
-        :root {
-            --ink: #0b1220;
-            --cloud: #f5f3ef;
-            --sand: #efe7dc;
-            --brand: #f97316;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: "Work Sans", "Segoe UI", sans-serif;
-            line-height: 1.6;
-            color: var(--ink);
-            background: radial-gradient(circle at top left, #ffffff 0%, var(--cloud) 55%, var(--sand) 100%);
-        }
-
-        .container {
-            width: min(980px, 92%);
-            margin: 0 auto;
-        }
-
-        header {
-            padding: 24px 0;
-        }
-
-        header a {
-            text-decoration: none;
-            color: var(--ink);
-            font-weight: 600;
-        }
-
-        h1, h2 {
-            font-family: "Space Grotesk", "Segoe UI", sans-serif;
-        }
-
-        main {
-            padding: 40px 0 80px;
-        }
-
-        h1 {
-            font-size: clamp(2rem, 3vw, 2.6rem);
-            margin-bottom: 16px;
-        }
-
-        h2 {
-            margin-top: 28px;
-            margin-bottom: 10px;
-            font-size: 1.2rem;
-        }
-
-        p {
-            margin-bottom: 12px;
-        }
-
-        .badge {
-            display: inline-block;
-            background: #ffffff;
-            border: 1px solid rgba(11, 18, 32, 0.12);
-            border-radius: 999px;
-            padding: 6px 14px;
-            font-weight: 600;
-            color: var(--brand);
-            margin-bottom: 12px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 24px 0;
-            background: #070d18;
-            color: #ffffff;
-        }
-
-        @media (max-width: 640px) {
-            main {
-                padding: 28px 0 60px;
-            }
-
-            h1 {
-                font-size: 1.9rem;
-            }
-
-            h2 {
-                margin-top: 22px;
-            }
-
-            p {
-                font-size: 0.98rem;
-            }
-        }
-    </style>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="Karlik%20ikon%20inverted%20-%20PNG.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <a href="index.html">← Tillbaka till hemsidan</a>
+
+<header>
+    <div class="container">
+        <div class="logo-nav">
+            <a href="index.html"><img src="logo.png" alt="Karlik Solutions" class="logo"></a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="huvudmeny" aria-label="Öppna meny">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="huvudmeny" aria-label="Huvudnavigation">
+                <ul>
+                    <li><a href="index.html#tjanster">Tjänster</a></li>
+                    <li><a href="dronare.html">Drönare</a></li>
+                    <li><a href="digitala-losningar.html">Digitala lösningar</a></li>
+                    <li><a href="index.html#om-oss">Om oss</a></li>
+                    <li><a href="index.html#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
         </div>
-    </header>
+    </div>
+</header>
 
-    <main>
-        <div class="container">
-            <span class="badge">Villkor och policy</span>
-            <h1>Visuell takdokumentation med drönare</h1>
+<main class="legal-page">
+    <div class="container">
+        <span class="eyebrow">Villkor och policy</span>
+        <h1>Villkor och integritetspolicy</h1>
+        <p class="legal-meta">Gäller från 2026-10-27</p>
 
-            <h2>1. Om tjänsten</h2>
-            <p>Tjänsten Visuell takdokumentation avser drönarbaserad, okulär dokumentation av byggnaders tak och närliggande ytor. Syftet är att tillhandahålla ett neutralt visuellt underlag för vidare bedömning, planering eller beslutsfattande.</p>
+        <nav class="legal-toc" aria-label="Innehåll">
+            <strong>Innehåll</strong>
+            <ol>
+                <li><a href="#allmant">Allmänna villkor</a></li>
+                <li><a href="#dronare">Drönartjänster</a></li>
+                <li><a href="#digitalt">Digitala lösningar</a></li>
+                <li><a href="#integritet">Integritetspolicy (GDPR)</a></li>
+            </ol>
+        </nav>
+
+        <!-- ===================== DEL 1 ===================== -->
+        <section class="legal-part" id="allmant">
+            <h2>1. Allmänna villkor</h2>
+            <p>Dessa villkor gäller för alla tjänster som utförs av Karlik Solutions. De särskilda villkoren för respektive tjänst (del 2 och 3) gäller utöver de allmänna villkoren. Om en skriftlig offert eller ett skriftligt avtal säger något annat gäller det före dessa villkor.</p>
+
+            <h3>1.1 Kunder</h3>
+            <p>Vi utför uppdrag åt företag, organisationer, föreningar, kommuner och privatpersoner. För privatpersoner (konsumenter) gäller tvingande konsumentlagstiftning. Ingenting i dessa villkor begränsar de rättigheter som en konsument har enligt lag.</p>
+
+            <h3>1.2 Offert och beställning</h3>
+            <p>Uppdrag bekräftas skriftligt, till exempel via e-post eller sms. Bekräftelsen anger tjänst, pris och eventuell tidpunkt för utförandet.</p>
+
+            <h3>1.3 Pris och betalning</h3>
+            <ul>
+                <li>Betalning sker mot faktura. Betalningsvillkor anges på fakturan.</li>
+                <li>Vid större uppdrag kan ett förskott tas ut. Det framgår i så fall av offerten.</li>
+                <li>Vid försenad betalning debiteras dröjsmålsränta enligt räntelagen.</li>
+            </ul>
+
+            <h3>1.4 Ångerrätt för privatpersoner</h3>
+            <p>Om du är privatperson och avtalet har ingåtts på distans (till exempel via telefon eller e-post) eller utanför vår affärslokal har du enligt lag 14 dagars ångerrätt från den dag avtalet ingicks.</p>
+            <ul>
+                <li>Om du har begärt att arbetet ska påbörjas under ångerfristen och sedan ångrar dig, betalar du för den del av tjänsten som har utförts fram till dess.</li>
+                <li>Ångerrätten upphör när tjänsten har fullgjorts, om du uttryckligen har samtyckt till att tjänsten utförs och godkänt att ångerrätten därmed går förlorad. Detta godkännande lämnas skriftligt i samband med bokningen.</li>
+                <li>Vill du ångra ett köp meddelar du oss det på <a href="mailto:karliksolutions@gmail.com">karliksolutions@gmail.com</a>.</li>
+            </ul>
+
+            <h3>1.5 Äganderätt till levererat material</h3>
+            <p>Bilder, rapporter, kod och annat material som tas fram inom ett uppdrag tillhör Karlik Solutions till dess att uppdraget är fullt betalt. Ett avbrutet eller ångrat uppdrag ger ingen rätt att använda materialet.</p>
+
+            <h3>1.6 Ansvarsbegränsning</h3>
+            <p>Om något går fel i ett uppdrag kan vi som mest behöva ersätta kunden med det belopp som kunden har betalat för just det uppdraget. Vi ersätter inte kostnader som uppstår i kundens verksamhet som en följd av felet, till exempel förlorade intäkter. Detta gäller inte om vi har orsakat skadan med avsikt eller genom grov vårdslöshet, och inte i den mån konsumentlagstiftningen ger privatpersoner starkare rättigheter.</p>
+
+            <h3>1.7 Omständigheter utanför vår kontroll</h3>
+            <p>Vi ansvarar inte för förseningar eller utebliven leverans som beror på omständigheter utanför vår kontroll, till exempel myndighetsbeslut, luftrumsrestriktioner, olyckor, sjukdom eller avbrott hos leverantörer.</p>
+
+            <h3>1.8 Ändringar av villkoren</h3>
+            <p>Vi kan komma att uppdatera dessa villkor. Det datum som anges högst upp gäller. För ett pågående uppdrag gäller de villkor som gällde när uppdraget bekräftades.</p>
+
+            <h3>1.9 Tvister</h3>
+            <p>Villkoren regleras av svensk rätt. Eventuella tvister ska i första hand lösas genom dialog. Privatpersoner kan även vända sig till Allmänna reklamationsnämnden (ARN), <a href="https://www.arn.se" rel="noopener">arn.se</a>.</p>
+        </section>
+
+        <!-- ===================== DEL 2 ===================== -->
+        <section class="legal-part" id="dronare">
+            <h2>2. Drönartjänster</h2>
+            <p>Gäller visuell takdokumentation och övrig dokumentation med drönare.</p>
+
+            <h3>2.1 Om tjänsten</h3>
+            <p>Visuell takdokumentation avser drönarbaserad, okulär dokumentation av byggnaders tak och närliggande ytor. Syftet är att tillhandahålla ett neutralt visuellt underlag för vidare bedömning, planering eller beslutsfattande.</p>
             <p>Tjänsten utgör inte:</p>
-            <p>teknisk besiktning</p>
-            <p>garanti eller utlåtande om funktion, täthet eller livslängd</p>
+            <ul>
+                <li>teknisk besiktning</li>
+                <li>garanti eller utlåtande om funktion, täthet eller livslängd</li>
+            </ul>
 
-            <h2>2. Metod och omfattning</h2>
+            <h3>2.2 Metod och omfattning</h3>
             <p>Dokumentationen utförs genom:</p>
-            <p>drönarflygning från luften</p>
-            <p>fotografering av synliga ytor</p>
-            <p>sammanställning i rapport (PDF) med bilder och observationer</p>
-            <p>Endast synliga ytor vid inspektionstillfället omfattas.</p>
+            <ul>
+                <li>drönarflygning</li>
+                <li>fotografering av synliga ytor</li>
+                <li>sammanställning i rapport (PDF) med bilder och observationer</li>
+            </ul>
+            <p>Endast ytor som är synliga vid dokumentationstillfället omfattas.</p>
 
-            <h2>3. Observationer och formuleringar</h2>
-            <p>Rapporten innehåller observationer, vilket innebär beskrivningar av vad som visuellt kan iakttas vid dokumentationstillfället.</p>
-            <p>Observationer:</p>
-            <p>är deskriptiva, inte värderande</p>
-            <p>baseras enbart på visuellt intryck</p>
-            <p>utgör inte fastställande av fel eller brist</p>
+            <h3>2.3 Observationer och formuleringar</h3>
+            <p>Rapporten innehåller observationer, det vill säga beskrivningar av vad som visuellt kan iakttas vid dokumentationstillfället. Observationer:</p>
+            <ul>
+                <li>är beskrivande, inte värderande</li>
+                <li>baseras enbart på visuellt intryck</li>
+                <li>utgör inte fastställande av fel eller brist</li>
+            </ul>
 
-            <h2>4. Riskklassning</h2>
-            <p>Eventuell riskklassning är avsedd som en prioriteringsindikator, inte som teknisk bedömning.</p>
-            <p>Riskklassning:</p>
-            <p>ersätter inte besiktning</p>
-            <p>ska ses som vägledning för om vidare kontroll kan vara motiverad</p>
+            <h3>2.4 Riskklassning</h3>
+            <p>Eventuell riskklassning är avsedd som en prioriteringsindikator, inte som teknisk bedömning. Riskklassning:</p>
+            <ul>
+                <li>ersätter inte besiktning</li>
+                <li>ska ses som vägledning för om vidare kontroll kan vara motiverad</li>
+            </ul>
 
-            <h2>5. Rekommendationer</h2>
-            <p>Där synliga avvikelser noterats kan rapporten innehålla generell formulering såsom:</p>
-            <p>Vid markerade observationer rekommenderas vidare kontroll av behörig sakkunnig eller fysisk besiktning.</p>
-            <p>Sådan rekommendation:</p>
-            <p>är generell</p>
-            <p>innebär inget ställningstagande till åtgärdsbehov, ställningstagande beslutas av beställaren. Karlik solutions erhåller endast underlag och förenkling för att ta dessa beslut och eventuellt slippa onödiga kostsamma fysiska besiktningar</p>
-            <p>innebär inget ansvar för framtida händelser</p>
+            <h3>2.5 Rekommendationer</h3>
+            <p>Där synliga avvikelser noterats kan rapporten innehålla en generell formulering som: <em>"Vid markerade observationer rekommenderas vidare kontroll av behörig sakkunnig eller fysisk besiktning."</em> En sådan rekommendation:</p>
+            <ul>
+                <li>är generell</li>
+                <li>innebär inget ställningstagande till åtgärdsbehov – beslut om åtgärder fattas av beställaren. Karlik Solutions tillhandahåller endast underlag som förenklar dessa beslut och kan bidra till att undvika onödiga och kostsamma fysiska besiktningar</li>
+                <li>innebär inget ansvar för framtida händelser</li>
+            </ul>
 
-            <h2>6. Begränsningar och ansvar</h2>
-            <p>Leverantören ansvarar inte för:</p>
-            <p>dolda fel eller skador</p>
-            <p>förändringar som uppstår efter dokumentationstillfället</p>
-            <p>skador som inte varit synliga vid flygning</p>
-            <p>tolkningar eller beslut som kund eller tredje part fattar baserat på rapporten</p>
-            <p>Rapporten ska betraktas som ett beslutsunderlag, inte som garanti eller utlåtande om byggnadens skick.</p>
+            <h3>2.6 Begränsningar och ansvar</h3>
+            <p>Vi ansvarar inte för:</p>
+            <ul>
+                <li>dolda fel eller skador</li>
+                <li>förändringar som uppstår efter dokumentationstillfället</li>
+                <li>skador som inte varit synliga vid flygning</li>
+                <li>tolkningar eller beslut som kund eller tredje part fattar baserat på rapporten</li>
+            </ul>
+            <p>Rapporten ska betraktas som ett beslutsunderlag, inte som en garanti eller ett utlåtande om byggnadens skick.</p>
 
-            <h2>7. Väder och förutsättningar</h2>
-            <p>Dokumentationen genomförs endast vid förhållanden som bedöms säkra och lämpliga, inklusive:</p>
-            <p>vindförhållanden</p>
-            <p>sikt</p>
-            <p>nederbörd</p>
-            <p>ljusförhållanden</p>
-            <p>Om förutsättningarna inte är tillräckliga kan uppdraget:</p>
-            <p>skjutas upp</p>
-            <p>ombokas</p>
+            <h3>2.7 Väder och förutsättningar</h3>
+            <p>Dokumentationen genomförs endast när förhållandena bedöms säkra och lämpliga med hänsyn till vind, sikt, nederbörd och ljus. Om förutsättningarna inte är tillräckliga skjuts uppdraget upp eller bokas om. Ombokning på grund av väder är alltid kostnadsfri.</p>
 
-            <h2>8. Definitioner (debiteringsgrund)</h2>
-            <p>Huskropp</p>
-            <p>En sammanhängande byggnadsvolym med eget tak.</p>
-            <p>Taksektion</p>
-            <p>En sammanhängande takyta som dokumenteras som en egen enhet i rapporten, exempelvis vid radhuslängor, U-formade byggnader eller sammanhängande bebyggelse.</p>
-            <p>Antalet huskroppar och/eller taksektioner fastställs före uppdragets start och utgör grund för prissättning.</p>
-            <p>Med huskropp avses en sammanhängande byggnadsdel med eget tak inklusive takskarvar som skiljer byggander i tätbefolkade områden. Separata byggnader eller byggnadsdelar med självständig takkonstruktion räknas som egna huskroppar. Villor räknas alltid som ett objekt.</p>
+            <h3>2.8 Avbokning</h3>
+            <p>Vid avbokning senare än 24 timmar före avtalad tid debiteras en avbokningsavgift på 499 kr.</p>
 
-            <h2>9. Leverans och användning</h2>
-            <p>Leverans sker normalt i digital form (PDF och bilder).</p>
-            <p>Materialet:</p>
-            <p>får användas av beställaren för internt beslutsfattande</p>
-            <p>får delas med exempelvis styrelse, förvaltare eller sakkunnig</p>
-            <p>Vid extern publicering eller kommersiell användning krävs skriftligt medgivande.</p>
+            <h3>2.9 Godkännande och omtag</h3>
+            <p>Resultatet stäms av med kunden på plats. Om kunden inte är nöjd gör vi om arbetet i mån av möjlighet. Debitering sker först när leveransen uppfyller det som avtalats. Om det önskade resultatet inte går att uppnå avbryts uppdraget.</p>
 
-            <h2>10. Personuppgifter och integritet</h2>
-            <p>Fotografering sker med fokus på byggnader, fasader, takrännor och takytor. Ingen avsiktlig fotografering av personer eller privata ytor genomförs.</p>
-            <p>Eventuella personuppgifter hanteras i enlighet med gällande dataskyddslagstiftning (GDPR).</p>
+            <h3>2.10 Definitioner (debiteringsgrund)</h3>
+            <dl>
+                <dt>Huskropp</dt>
+                <dd>En sammanhängande byggnadsdel med eget tak, inklusive takskarvar som skiljer byggnader åt i tätbebyggda områden. Separata byggnader eller byggnadsdelar med självständig takkonstruktion räknas som egna huskroppar. Villor räknas alltid som ett objekt.</dd>
+                <dt>Taksektion</dt>
+                <dd>En sammanhängande takyta som dokumenteras som en egen enhet i rapporten, till exempel vid radhuslängor, U-formade byggnader eller sammanhängande bebyggelse.</dd>
+            </dl>
+            <p>Antalet huskroppar och/eller taksektioner fastställs innan uppdraget startar och utgör grund för prissättningen.</p>
 
-            <h2>11. Gällande rätt</h2>
-            <p>Dessa villkor regleras av svensk rätt. Eventuella tvister ska i första hand lösas genom dialog och i andra hand prövas enligt svensk lag.</p>
-        </div>
-    </main>
+            <h3>2.11 Leverans och användning</h3>
+            <p>Leverans sker normalt digitalt (PDF och bilder). Materialet:</p>
+            <ul>
+                <li>får användas av beställaren för internt beslutsfattande</li>
+                <li>får delas med exempelvis styrelse, förvaltare eller sakkunnig</li>
+            </ul>
+            <p>Extern publicering eller kommersiell användning kräver skriftligt medgivande.</p>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2021 Green Garden Group AB - Jönköping</p>
-        </div>
-    </footer>
+            <h3>2.12 Lagring av bilder och rapporter</h3>
+            <p>Bilder och rapporter sparas i en månad efter leverans och raderas därefter, om inget annat har avtalats. Kunden ansvarar för att spara en egen kopia av det levererade materialet.</p>
+        </section>
+
+        <!-- ===================== DEL 3 ===================== -->
+        <section class="legal-part" id="digitalt">
+            <h2>3. Digitala lösningar</h2>
+            <p>Gäller hemsidor, system, verktyg och automatiseringar. Omfattningen av varje uppdrag framgår av offerten.</p>
+
+            <h3>3.1 Reklamation</h3>
+            <p>Kunden har 14 dagar från leverans på sig att reklamera fel i leveransen. Fel som reklameras inom denna tid åtgärdas utan extra kostnad.</p>
+
+            <h3>3.2 Statiska hemsidor</h3>
+            <ul>
+                <li>Kunden får hela koden till hemsidan 14 dagar efter leverans, förutsatt att fakturan är betald.</li>
+                <li>Från och med överlämningen ansvarar kunden för hemsidan, dess drift och innehåll.</li>
+                <li>Domäner registreras i kundens namn.</li>
+                <li>Ändringar efter överlämningen utförs mot avgift.</li>
+            </ul>
+
+            <h3>3.3 System med databas och drift</h3>
+            <ul>
+                <li>System med databas körs på Karlik Solutions konton mot en månatlig drift- och underhållsavgift.</li>
+                <li>Avgiften omfattar drift och rättning av fel (buggar) under hela den tid vi sköter driften.</li>
+                <li>Uppdateringar, ändringar och nya funktioner debiteras separat.</li>
+                <li>Eventuella domäner registreras i kundens namn.</li>
+                <li>Kunden kan när som helst begära att systemet, inklusive kod och data, flyttas till kundens eget konto. Vårt ansvar för systemet upphör vid överlämningen.</li>
+            </ul>
+
+            <h3>3.4 Uppsägning av drift</h3>
+            <p>Driftavtalet har en uppsägningstid på en månad. När avtalet upphör får kunden en export av sin data som CSV- eller SQL-fil.</p>
+
+            <h3>3.5 Tredje part och data</h3>
+            <ul>
+                <li>Vi ansvarar inte för avbrott eller fel hos tredjepartstjänster, till exempel molntjänster, webbhotell, domänleverantörer eller internetleverantörer.</li>
+                <li>Kunden ansvarar för att viktig information inte enbart finns lagrad i systemet, och för att ha egna kopior av data som är verksamhetskritisk.</li>
+            </ul>
+        </section>
+
+        <!-- ===================== DEL 4 ===================== -->
+        <section class="legal-part" id="integritet">
+            <h2>4. Integritetspolicy (GDPR)</h2>
+
+            <h3>4.1 Personuppgiftsansvarig</h3>
+            <p>Green Garden Group AB (Karlik Solutions), org.nr 559255-2235, Jönköping, är personuppgiftsansvarig. Frågor om personuppgifter skickas till <a href="mailto:karliksolutions@gmail.com">karliksolutions@gmail.com</a>.</p>
+
+            <h3>4.2 Kontaktformuläret</h3>
+            <p>När du använder kontaktformuläret på denna webbplats behandlar vi de uppgifter du lämnar: namn, e-postadress, vilken tjänst förfrågan gäller och ditt meddelande. Uppgifterna används endast för att besvara din förfrågan och sparas så länge som behövs för det. Vi säljer eller lämnar aldrig ut uppgifterna till någon annan i marknadsföringssyfte.</p>
+
+            <h3>4.3 Kunder och uppdrag</h3>
+            <p>För att utföra och fakturera uppdrag behandlar vi kontakt- och fakturauppgifter. Uppgifterna sparas så länge uppdraget pågår och därefter så länge som krävs enligt lag, till exempel bokföringslagen.</p>
+
+            <h3>4.4 Drönarbilder</h3>
+            <p>Fotografering sker med fokus på byggnader, fasader, takrännor och takytor. Ingen avsiktlig fotografering av personer eller privata ytor genomförs. Bilder raderas en månad efter leverans, om inget annat har avtalats.</p>
+
+            <h3>4.5 Dina rättigheter</h3>
+            <p>Du har rätt att:</p>
+            <ul>
+                <li>få veta vilka uppgifter vi har om dig</li>
+                <li>få felaktiga uppgifter rättade</li>
+                <li>få dina uppgifter raderade, om de inte måste sparas enligt lag</li>
+                <li>invända mot hur dina uppgifter behandlas</li>
+            </ul>
+            <p>Kontakta oss på <a href="mailto:karliksolutions@gmail.com">karliksolutions@gmail.com</a>. Om du anser att vi behandlar dina uppgifter felaktigt kan du lämna klagomål till Integritetsskyddsmyndigheten (IMY), <a href="https://www.imy.se" rel="noopener">imy.se</a>.</p>
+        </section>
+
+
+        <section class="legal-part" id="foretaget">
+            <h2>Företagsuppgifter</h2>
+            <p>Karlik Solutions drivs av Green Garden Group AB<br>
+            Org.nr 559255-2235<br>
+            Jönköping<br>
+            <a href="mailto:karliksolutions@gmail.com">karliksolutions@gmail.com</a> · 072-912 41 44</p>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2021 Green Garden Group AB - Jönköping</p>
+        <p><a href="villkor.html">Villkor</a></p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
