@@ -657,6 +657,104 @@ a.service-card:hover {
     }
 }
 
+/* ---------- Villkorssida ---------- */
+
+.legal-page {
+    padding: 56px 0 80px;
+}
+
+.legal-page .container {
+    max-width: 860px;
+}
+
+.legal-page h1 {
+    font-family: "Space Grotesk", "Segoe UI", sans-serif;
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    line-height: 1.15;
+    margin-bottom: 12px;
+}
+
+.legal-meta {
+    opacity: 0.7;
+    margin-bottom: 28px;
+}
+
+.legal-toc {
+    background: #ffffff;
+    border: 1px solid rgba(28, 42, 61, 0.1);
+    border-radius: 16px;
+    padding: 20px 24px;
+    margin-bottom: 40px;
+}
+
+.legal-toc strong {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.legal-toc ol {
+    padding-left: 20px;
+}
+
+.legal-toc a {
+    color: var(--ink);
+}
+
+.legal-toc a:hover {
+    color: var(--brand-dark);
+}
+
+.legal-part {
+    scroll-margin-top: 90px;
+    background: #ffffff;
+    border: 1px solid rgba(28, 42, 61, 0.1);
+    border-radius: 18px;
+    padding: 32px;
+    margin-bottom: 28px;
+}
+
+.legal-part > h2 {
+    margin-bottom: 8px;
+}
+
+.legal-part h3 {
+    font-family: "Space Grotesk", "Segoe UI", sans-serif;
+    font-size: 1.1rem;
+    margin: 26px 0 8px;
+}
+
+.legal-part p,
+.legal-part ul {
+    margin-bottom: 12px;
+}
+
+.legal-part ul {
+    padding-left: 22px;
+}
+
+.legal-part li {
+    margin-bottom: 4px;
+}
+
+.legal-part dt {
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.legal-part dd {
+    margin: 0 0 8px;
+}
+
+.legal-part a {
+    color: var(--brand-dark);
+}
+
+@media (max-width: 640px) {
+    .legal-part {
+        padding: 22px 18px;
+    }
+}
+
 /* ---------- Fördelar ---------- */
 
 .benefits-section {
