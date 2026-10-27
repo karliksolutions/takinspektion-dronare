@@ -110,53 +110,173 @@
 <section id="vad-vi-gor" class="services-section">
     <div class="container">
         <h2>Vad vi kan hjälpa till med</h2>
-        <p class="section-intro">Ingen färdig standardlösning – vi utgår från hur just ert företag arbetar och bygger det som behövs, varken mer eller mindre.</p>
+        <p class="section-intro">Ingen färdig standardlösning – vi utgår från hur just ert företag arbetar och bygger det som behövs, varken mer eller mindre. Klicka på en ruta för att se ett exempel.</p>
         <div class="services-grid">
-            <div class="service-card">
+            <a href="#hyllsok" class="service-card example-card is-active" data-example="hyllsok" aria-pressed="true">
                 <h3>Hyllsökning för lager och butik</h3>
                 <p>En skärm där kunder eller personal skriver eller skannar ett artikelnummer och direkt ser var varan står. Slipp leta och slipp fråga.</p>
-            </div>
-            <div class="service-card">
+                <span class="card-link">Se exempel →</span>
+            </a>
+            <a href="#automatisering" class="service-card example-card" data-example="automatisering" aria-pressed="false">
                 <h3>Automatiserade flöden</h3>
                 <p>Låt förfrågningar, formulär och e-post sorteras och skickas vidare automatiskt till rätt person eller system – utan manuellt jobb.</p>
-            </div>
-            <div class="service-card">
+                <span class="card-link">Se exempel →</span>
+            </a>
+            <a href="#verktyg" class="service-card example-card" data-example="verktyg" aria-pressed="false">
                 <h3>Interna verktyg</h3>
                 <p>Enkla webbappar för det som i dag sköts i Excel, på papper eller i huvudet: listor, register och översikter som hela teamet når.</p>
-            </div>
-            <div class="service-card">
-                <h3>Hemsidor för småföretag</h3>
-                <p>Snabba, tydliga hemsidor med kontaktformulär som fungerar – och som du själv äger.</p>
-            </div>
+                <span class="card-link">Se exempel →</span>
+            </a>
+            <a href="#hemsidor" class="service-card example-card" data-example="hemsidor" aria-pressed="false">
+                <h3>Statiska hemsidor för småföretag</h3>
+                <p>Snabba, säkra och billiga att driva – med kontaktformulär som fungerar och kod som du själv äger.</p>
+                <span class="card-link">Se exempel →</span>
+            </a>
         </div>
     </div>
 </section>
 
 <section id="exempel" class="benefits-section">
-    <div class="container case-grid">
-        <div>
-            <span class="eyebrow">Exempel</span>
-            <h2>Hyllsök – hitta rätt hylla på sekunder</h2>
-            <p>
-                För en grossist i Jönköping har vi byggt Hyllsök: ett system där kunder och personal själva hittar var en artikel står i butiken, direkt på en skärm.
-            </p>
-            <ul class="case-list">
-                <li><strong>Sök eller skanna</strong> – skriv in artikelnumret eller skanna streckkoden och hyllplatsen visas direkt.</li>
-                <li><strong>Enkelt att uppdatera</strong> – i ett administratörsläge kan personalen själva lägga till, ändra och ta bort artiklar.</li>
-                <li><strong>Fungerar även utan internet</strong> – skärmen visar den senast sparade listan om uppkopplingen skulle gå ner.</li>
-                <li><strong>Låg driftskostnad</strong> – systemet körs i molnet utan egen server att underhålla.</li>
-            </ul>
-        </div>
-        <div class="mock-screen" aria-hidden="true">
-            <div class="mock-inner">
-                <p class="mock-label">Skriv eller skanna artikelnummer</p>
-                <div class="mock-input">7654321</div>
-                <div class="mock-result">
-                    <small>Finns på hylla</small>
-                    <strong>3 A</strong>
+    <div class="container">
+
+        <!-- Exempel 1: Hyllsök -->
+        <div class="example-panel case-grid" id="panel-hyllsok">
+            <div>
+                <span class="eyebrow">Exempel</span>
+                <h2>Hyllsök – hitta rätt hylla på sekunder</h2>
+                <p>
+                    För en grossist i Jönköping har vi byggt Hyllsök: ett system där kunder och personal själva hittar var en artikel står i butiken, direkt på en skärm.
+                </p>
+                <ul class="case-list">
+                    <li><strong>Sök eller skanna</strong> – skriv in artikelnumret eller skanna streckkoden och hyllplatsen visas direkt.</li>
+                    <li><strong>Enkelt att uppdatera</strong> – i ett administratörsläge kan personalen själva lägga till, ändra och ta bort artiklar.</li>
+                    <li><strong>Fungerar även utan internet</strong> – skärmen visar den senast sparade listan om uppkopplingen skulle gå ner.</li>
+                    <li><strong>Låg driftskostnad</strong> – systemet körs i molnet utan egen server att underhålla.</li>
+                </ul>
+            </div>
+            <div>
+                <div class="mock-screen" aria-hidden="true">
+                    <div class="mock-inner">
+                        <p class="mock-label">Skriv eller skanna artikelnummer</p>
+                        <div class="mock-input">7654321</div>
+                        <div class="mock-result">
+                            <small>Finns på hylla</small>
+                            <strong>3 A</strong>
+                        </div>
+                    </div>
                 </div>
+                <p class="mock-caption">Illustration med påhittade uppgifter</p>
             </div>
         </div>
+
+        <!-- Exempel 2: Automatiserade flöden -->
+        <div class="example-panel case-grid" id="panel-automatisering">
+            <div>
+                <span class="eyebrow">Exempel</span>
+                <h2>Automatiserade flöden – låt systemen jobba</h2>
+                <p>
+                    Många småföretag lägger tid varje dag på att kopiera uppgifter, vidarebefordra mejl och komma ihåg att svara. Ett automatiserat flöde gör det åt er – varje gång, på samma sätt.
+                </p>
+                <ul class="case-list">
+                    <li><strong>Exempel:</strong> en kund fyller i kontaktformuläret på hemsidan.</li>
+                    <li><strong>Direkt bekräftelse</strong> – kunden får automatiskt ett mejl om att förfrågan är mottagen.</li>
+                    <li><strong>Rätt mottagare</strong> – förfrågan sorteras efter tjänst och skickas till rätt person eller inkorg.</li>
+                    <li><strong>Inget faller bort</strong> – uppgifterna sparas i en lista så att ni har koll på alla ärenden.</li>
+                </ul>
+            </div>
+            <div>
+                <div class="mock-screen" aria-hidden="true">
+                    <div class="mock-inner mock-flow">
+                        <div class="flow-step"><span class="flow-dot">1</span><div>Formulär skickas<small>Från hemsidan</small></div></div>
+                        <div class="flow-arrow">↓</div>
+                        <div class="flow-step"><span class="flow-dot">2</span><div>Sorteras automatiskt<small>Efter vald tjänst</small></div></div>
+                        <div class="flow-arrow">↓</div>
+                        <div class="flow-split">
+                            <div class="flow-step"><span class="flow-dot">3</span><div>Mejl till rätt person</div></div>
+                            <div class="flow-step"><span class="flow-dot">4</span><div>Bekräftelse till kund</div></div>
+                        </div>
+                        <div class="flow-arrow">↓</div>
+                        <div class="flow-step"><span class="flow-dot">5</span><div>Sparas i ärendelistan<small>Allt samlat på ett ställe</small></div></div>
+                    </div>
+                </div>
+                <p class="mock-caption">Illustration av ett exempelflöde</p>
+            </div>
+        </div>
+
+        <!-- Exempel 3: Interna verktyg -->
+        <div class="example-panel case-grid" id="panel-verktyg">
+            <div>
+                <span class="eyebrow">Exempel</span>
+                <h2>Interna verktyg – ersätt Excel-listan</h2>
+                <p>
+                    Listor som ligger i en Excel-fil på någons dator, eller på en lapp i fikarummet, blir snabbt inaktuella. Ett enkelt internt verktyg samlar allt på ett ställe som alla i teamet når från mobil och dator.
+                </p>
+                <ul class="case-list">
+                    <li><strong>Exempel:</strong> en lista över företagets verktyg och maskiner – vem som har lånat vad och när det ska tillbaka.</li>
+                    <li><strong>Alltid aktuellt</strong> – alla ser samma lista, i realtid.</li>
+                    <li><strong>Byggt för er</strong> – bara de fält och funktioner ni faktiskt behöver.</li>
+                    <li><strong>Når från överallt</strong> – fungerar i webbläsaren, ingen app att installera.</li>
+                </ul>
+            </div>
+            <div>
+                <div class="mock-screen" aria-hidden="true">
+                    <div class="mock-inner">
+                        <div class="mock-toolbar">Utlånade verktyg <span class="mock-btn">+ Ny</span></div>
+                        <table class="mock-table">
+                            <thead>
+                                <tr><th>Verktyg</th><th>Lånad av</th><th>Status</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Borrmaskin 2</td><td>Anna</td><td><span class="pill pill-out">Utlånad</span></td></tr>
+                                <tr><td>Laseravståndsmätare</td><td>–</td><td><span class="pill pill-ok">Tillgänglig</span></td></tr>
+                                <tr><td>Stege 3 m</td><td>Erik</td><td><span class="pill pill-out">Utlånad</span></td></tr>
+                                <tr><td>Värmekamera</td><td>–</td><td><span class="pill pill-ok">Tillgänglig</span></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <p class="mock-caption">Illustration med påhittade uppgifter</p>
+            </div>
+        </div>
+
+        <!-- Exempel 4: Statiska hemsidor -->
+        <div class="example-panel case-grid" id="panel-hemsidor">
+            <div>
+                <span class="eyebrow">Exempel</span>
+                <h2>Statiska hemsidor – enkelt, snabbt och säkert</h2>
+                <p>
+                    Vi bygger <strong>statiska hemsidor</strong>: färdiga sidor utan databas eller publiceringssystem i bakgrunden. Det passar småföretag som vill ha en tydlig och professionell närvaro på nätet utan löpande krångel.
+                </p>
+                <ul class="case-list">
+                    <li><strong>Snabb</strong> – sidorna laddar direkt, även i mobilen.</li>
+                    <li><strong>Säker</strong> – inget publiceringssystem eller tillägg som behöver säkerhetsuppdateras.</li>
+                    <li><strong>Billig att driva</strong> – låg eller ingen kostnad för webbhotell.</li>
+                    <li><strong>Kontaktformulär som fungerar</strong> – förfrågningarna kan kopplas till ett automatiserat flöde.</li>
+                    <li><strong>Du äger den</strong> – koden är din och kan flyttas vart du vill.</li>
+                </ul>
+                <p class="panel-note">
+                    <strong>Bra att veta:</strong> en statisk hemsida har inget inloggningsläge där du själv redigerar texterna, och passar inte för webbshop. Ändringar görs av oss när du behöver dem.
+                </p>
+            </div>
+            <div>
+                <div class="mock-screen" aria-hidden="true">
+                    <div class="mock-browser">
+                        <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">dittforetag.se</span></div>
+                        <div class="browser-page">
+                            <div class="mini-hero">
+                                <strong>Ditt företag</strong>
+                                <small>Det här gör vi – kort och tydligt.</small><br>
+                                <span class="mini-btn">Kontakta oss</span>
+                            </div>
+                            <div class="mini-cards"><span></span><span></span><span></span></div>
+                            <div class="speed-badge">Laddningstid <span>Snabb ✓</span></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="mock-caption">Illustration av en enkel företagssida</p>
+            </div>
+        </div>
+
     </div>
 </section>
 

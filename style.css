@@ -433,6 +433,223 @@ a.service-card:hover {
     margin-top: 12px;
 }
 
+/* Klickbara exempelrutor */
+.example-card {
+    cursor: pointer;
+}
+
+.example-card.is-active {
+    border-color: var(--brand);
+    box-shadow: 0 0 0 2px var(--brand), 0 16px 30px rgba(20, 30, 45, 0.12);
+}
+
+#exempel {
+    scroll-margin-top: 70px;
+}
+
+.example-panel[hidden] {
+    display: none;
+}
+
+.example-panel {
+    animation: fadeUp 0.4s ease;
+}
+
+.panel-note {
+    margin-top: 16px;
+    padding: 14px 16px;
+    border-radius: 12px;
+    background: #ffffff;
+    border: 1px dashed rgba(28, 42, 61, 0.2);
+    font-size: 0.95rem;
+}
+
+/* Illustration: automatiserat flöde */
+.mock-flow {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+    text-align: left;
+}
+
+.flow-step {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--cloud);
+    border-radius: 12px;
+    padding: 12px 14px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.flow-step small {
+    display: block;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.flow-dot {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--brand);
+    color: var(--ink);
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.flow-arrow {
+    text-align: center;
+    color: var(--brand-dark);
+    font-weight: 700;
+    line-height: 1;
+}
+
+.flow-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+}
+
+/* Illustration: internt verktyg (tabell) */
+.mock-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.mock-table th {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+    padding: 0 8px 8px;
+}
+
+.mock-table td {
+    padding: 10px 8px;
+    border-top: 1px solid rgba(28, 42, 61, 0.08);
+}
+
+.pill {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.pill-ok { background: rgba(14, 165, 160, 0.15); color: #0b7d79; }
+.pill-out { background: rgba(249, 115, 22, 0.15); color: var(--brand-dark); }
+
+.mock-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    font-weight: 700;
+}
+
+.mock-btn {
+    background: var(--brand);
+    color: var(--ink);
+    font-size: 0.8rem;
+    padding: 4px 12px;
+    border-radius: 999px;
+}
+
+/* Illustration: statisk hemsida i webbläsarfönster */
+.mock-browser {
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.browser-bar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 12px;
+    background: var(--sand);
+}
+
+.browser-bar i {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(28, 42, 61, 0.25);
+}
+
+.browser-url {
+    margin-left: 8px;
+    flex: 1;
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 2px 10px;
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.browser-page {
+    padding: 18px;
+}
+
+.mini-hero {
+    background: linear-gradient(120deg, var(--ink), var(--edge));
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 12px;
+}
+
+.mini-hero strong {
+    display: block;
+    font-family: "Space Grotesk", "Segoe UI", sans-serif;
+    font-size: 1.1rem;
+}
+
+.mini-btn {
+    display: inline-block;
+    margin-top: 10px;
+    background: var(--brand);
+    color: var(--ink);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 999px;
+}
+
+.mini-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.mini-cards span {
+    height: 48px;
+    border-radius: 8px;
+    background: var(--cloud);
+}
+
+.speed-badge {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.speed-badge span {
+    color: #0b7d79;
+}
+
 @media (max-width: 820px) {
     .case-grid {
         grid-template-columns: 1fr;

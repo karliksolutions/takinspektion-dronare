@@ -24,6 +24,43 @@ if (navToggle && navMenu) {
     });
 }
 
+/* ---------- Klickbara exempel (Digitala lösningar) ---------- */
+const exampleCards = document.querySelectorAll(".example-card");
+const examplePanels = document.querySelectorAll(".example-panel");
+
+if (exampleCards.length && examplePanels.length) {
+    const showExample = (id, scroll) => {
+        const panel = document.querySelector("#panel-" + id);
+        if (!panel) return false;
+
+        examplePanels.forEach((p) => { p.hidden = p !== panel; });
+        exampleCards.forEach((card) => {
+            const active = card.dataset.example === id;
+            card.classList.toggle("is-active", active);
+            card.setAttribute("aria-pressed", String(active));
+        });
+
+        if (scroll) {
+            document.querySelector("#exempel").scrollIntoView({ behavior: "smooth", block: "start" });
+            history.replaceState(null, "", "#" + id);
+        }
+        return true;
+    };
+
+    exampleCards.forEach((card) => {
+        card.addEventListener("click", (event) => {
+            event.preventDefault();
+            showExample(card.dataset.example, true);
+        });
+    });
+
+    // Startläge: Hyllsök, eller det exempel som anges i adressen (t.ex. #hemsidor)
+    const fromHash = location.hash.replace("#", "");
+    if (!showExample(fromHash, false)) {
+        showExample("hyllsok", false);
+    }
+}
+
 /* ---------- Kontaktformulär ---------- */
 const form = document.querySelector("#contact-form");
 const statusEl = document.querySelector("#form-status");
