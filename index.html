@@ -383,6 +383,10 @@
             font-family: "Space Grotesk", "Segoe UI", sans-serif;
         }
 
+        form {
+            position: relative;
+        }
+
         form input,
         form textarea {
             width: 100%;
@@ -407,6 +411,16 @@
             border-radius: 999px;
             font-weight: 700;
             cursor: pointer;
+        }
+
+        /* Honeypot: dolt för människor, synligt för bottar */
+        .hp-field {
+            position: absolute;
+            left: -9999px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
         }
 
         .form-status {
@@ -713,6 +727,13 @@
                 <input type="text" name="name" placeholder="Namn" required>
                 <input type="email" name="email" placeholder="Email" required>
                 <textarea name="message" placeholder="Meddelande" required></textarea>
+
+                <!-- Honeypot: ska alltid vara tomt. Fylls det i är det en bot. -->
+                <div class="hp-field" aria-hidden="true">
+                    <label for="website">Lämna detta fält tomt</label>
+                    <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                </div>
+
                 <button type="submit">Skicka</button>
                 <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
             </form>
@@ -735,6 +756,16 @@
     if (form) {
         form.addEventListener("submit", async (event) => {
             event.preventDefault();
+
+            // Honeypot: om fältet är ifyllt är det en bot – låtsas att allt gick bra men skicka inget
+            const honeypot = form.querySelector("#website");
+            if (honeypot && honeypot.value.trim() !== "") {
+                form.reset();
+                statusEl.textContent = "Tack! Vi återkommer så snart vi kan.";
+                statusEl.className = "form-status success";
+                return;
+            }
+
             statusEl.textContent = "Skickar...";
             statusEl.className = "form-status";
 
@@ -770,6 +801,3 @@
 
 </body>
 </html>
-
-
-
