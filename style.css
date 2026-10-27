@@ -1037,3 +1037,25 @@ footer a {
         padding: 18px;
     }
 }
+
+/* ---------- Om oss ---------- */
+
+.about-section h3 {
+    font-family: "Space Grotesk", "Segoe UI", sans-serif;
+    font-size: 1.25rem;
+    margin: 32px 0 10px;
+}
+
+.about-lead {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--brand-dark);
+    margin-top: -8px;
+}
+
+.about-tagline {
+    font-family: "Space Grotesk", "Segoe UI", sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-top: 28px;
+}
